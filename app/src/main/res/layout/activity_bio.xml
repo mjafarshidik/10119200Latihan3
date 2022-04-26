@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--24 April 2022-->
+<!--10119200-->
+<!--Muhammad Jafar Shidik-->
+<!--IF-5-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.BioActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorMainBackground"
+        android:clipToPadding="false"
+        android:padding="@dimen/dimen26"
+        tools:context=".view.activation.RegisterFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen50"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TextGunmetalNunitoBold24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen2"
+                android:text="@string/bio_name" />
+
+            <EditText
+                android:id="@+id/edtBiodataName"
+                style="@style/EdtWhiteFour15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/bio_hint_name_holder"
+                android:importantForAutofill="no"
+                android:inputType="textCapWords"
+                android:maxLength="8"
+                android:paddingTop="@dimen/dimen14"
+                android:paddingBottom="@dimen/dimen14" />
+
+            <TextView
+                style="@style/TextGunmetalNunitoBold24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen2"
+                android:layout_marginTop="@dimen/dimen34"
+                android:text="@string/bio_age" />
+
+            <EditText
+                android:id="@+id/edtBiodataAge"
+                style="@style/EdtWhiteFour15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/bio_age_holder"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:paddingTop="@dimen/dimen14"
+                android:paddingBottom="@dimen/dimen14" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnBiodataNext"
+            style="@style/ButtonYellowRounded18RubikMedium14Black"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen36"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:paddingStart="@dimen/dimen50"
+            android:paddingEnd="@dimen/dimen50"
+            android:text="@string/next"
+            android:textAllCaps="false" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
